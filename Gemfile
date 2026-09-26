@@ -20,7 +20,7 @@ gem "aws-sdk-s3"
 gem "jwt"
 
 # json 3.0 は ActiveSupport 8.1.3 の JSON.parse 呼び出しと非互換（ArgumentError）なので 2 系に固定
-gem "json", "~> 2.15"
+gem "json", "~> 3.0"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
