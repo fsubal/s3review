@@ -1,0 +1,6 @@
+# Solid Queue の定期ジョブ。REINDEX_EVERY（既定 10 分）ごとにバケットを再クロールして SQLite の索引を更新する
+production:
+  reindex:
+    class: ReindexJob
+    queue: default
+    schedule: <%= ENV.fetch("REINDEX_EVERY", "every 10 minutes") %>
